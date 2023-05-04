@@ -13,9 +13,6 @@ Fraction ::Fraction(int numerator, int denominator)
 Fraction ::Fraction(float number)
 {
 }
-Fraction ::Fraction(const Fraction &fraction)
-{
-}
 Fraction ::Fraction()
 {
 }
@@ -34,49 +31,49 @@ void Fraction ::setDenominator(int denominator)
 {
 }
 
-Fraction Fraction ::operator+(const Fraction &fraction)
+Fraction Fraction ::operator+(const Fraction &fraction) const
 {
     Fraction a(1,2);
     return a;
 };
 
-Fraction Fraction ::operator-(const Fraction &fraction)
+Fraction Fraction ::operator-(const Fraction &fraction) const
 {
     Fraction a(1,2);
     return a;
 };
 
-Fraction Fraction ::operator/(const Fraction &fraction)
+Fraction Fraction ::operator/(const Fraction &fraction) const
 {
     Fraction a(1,2);
     return a;
 };
 
-Fraction Fraction ::operator*(const Fraction &fraction)
+Fraction Fraction ::operator*(const Fraction &fraction) const
 {
     Fraction a(1,2);
     return a;
 };
 
-Fraction Fraction ::operator+(const float number)
+Fraction Fraction ::operator+(float number) const
 {
     Fraction a(1,2);
     return a;
 };
 
-Fraction Fraction ::operator-(const float number)
+Fraction Fraction ::operator-(float number) const
 {
     Fraction a(1,2);
     return a;
 };
 
-Fraction Fraction ::operator/(const float number)
+Fraction Fraction ::operator/(float number) const
 {
     Fraction a(1,2);
     return a;
 };
 
-Fraction Fraction ::operator*(const float number)
+Fraction Fraction ::operator*(float number) const
 {
     Fraction a(1,2);
     return a;
@@ -130,27 +127,27 @@ Fraction Fraction ::operator--(int number)
     return a;
 };
 
-bool Fraction ::operator>=(const float number)
+bool Fraction ::operator>=(float number) const
 {
     return false;
 };
 
-bool Fraction ::operator>(const float number)
+bool Fraction ::operator>(float number) const
 {
     return false;
 };
 
-bool Fraction ::operator<=(const float number)
+bool Fraction ::operator<=(float number) const
 {
     return false;
 };
 
-bool Fraction ::operator<(const float number)
+bool Fraction ::operator<(float number) const
 {
     return false;
 };
 
-bool Fraction ::operator==(const float number)
+bool Fraction ::operator==(float number) const
 {
     return false;
 };
